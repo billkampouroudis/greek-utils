@@ -1,4 +1,4 @@
-import { mapGreekToLatin } from '../mappings/mapGreekToLatin';
+import mapGreekToLatin from '../mappings/mapGreekToLatin';
 
 /**
  * Takes a greek text and converts it to latin.
@@ -12,7 +12,7 @@ export default function toLatin(greekText = '') {
     const mapItem = mapGreekToLatin[i];
 
     if (mapItem.next) {
-      for (let followingLetter of mapItem.next) {
+      for (const followingLetter of mapItem.next) {
         const reg = new RegExp(`${mapItem.from}${followingLetter}`);
         const match = reg.exec(converted);
 

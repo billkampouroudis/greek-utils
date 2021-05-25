@@ -1,4 +1,4 @@
-export const mapGreekSanitized = [
+const mapGreekSanitized = [
   { from: 'ά', to: 'α' },
   { from: 'Ά', to: 'Α' },
   { from: 'έ', to: 'ε' },
@@ -14,5 +14,7 @@ export const mapGreekSanitized = [
   { from: 'ΰ', to: 'υ' },
   { from: 'ύ', to: 'υ' },
   { from: 'Ώ', to: 'ω' },
-  { from: 'ώ', to: 'ω' }
+  { from: 'ώ', to: 'ω' },
 ];
+
+export default mapGreekSanitized;

@@ -8,7 +8,7 @@ const auToAv = [
   'ρ', 'Ρ',
   'σμ', 'Σμ', 'ΣΜ',
   'ω', 'Ω', 'ώ', 'Ώ',
-  'ομαι', 'όμαι'
+  'ομαι', 'όμαι', 'OMAI',
 ];
 
 const auToAf = [
@@ -20,7 +20,7 @@ const auToAf = [
   'στ', 'Στ', 'ΣΤ',
   'στρ', 'Στρ', 'ΣΤΡ',
   'τ', 'Τ',
-  'χ', 'Χ'
+  'χ', 'Χ',
 ];
 
 const euToEv = [
@@ -35,7 +35,7 @@ const euToEv = [
   'λ', 'Λ',
   'μ', 'Μ',
   'ν', 'Ν',
-  'ρ', 'Ρ'
+  'ρ', 'Ρ',
 ];
 
 const euToEf = [
@@ -46,10 +46,10 @@ const euToEf = [
   'σ', 'Σ',
   'τ', 'Τ',
   'φ', 'Φ',
-  'χ', 'Χ'
+  'χ', 'Χ',
 ];
 
-export const mapGreekToLatin = [
+const mapGreekToLatin = [
   { from: 'αυ', to: 'av', next: auToAv },
   { from: 'αύ', to: 'av', next: auToAv },
   { from: 'Αυ', to: 'Av', next: auToAv },
@@ -167,5 +167,7 @@ export const mapGreekToLatin = [
   { from: 'Ώ', to: 'o' },
   { from: 'ώ', to: 'o' },
   { from: 'ς', to: 's' },
-  { from: ';', to: '?' }
+  { from: ';', to: '?' },
 ];
+
+export default mapGreekToLatin;
