@@ -4,7 +4,7 @@
   "description": "A library that contains useful utilities for the Greek language.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
