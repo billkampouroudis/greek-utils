@@ -17,11 +17,11 @@ export default function toLatin(greekText = '') {
         const match = reg.exec(converted);
 
         if (match !== null) {
-          converted = converted.replaceAll(mapItem.from, mapItem.to);
+          converted = converted.replace(new RegExp(mapItem.from, 'g'), mapItem.to);
         }
       }
     } else {
-      converted = converted.replaceAll(mapItem.from, mapItem.to);
+      converted = converted.replace(new RegExp(mapItem.from, 'g'), mapItem.to);
     }
   }
 
