@@ -34,4 +34,8 @@ describe('Checks if the conversion is done properly', () => {
   it('Should convert the name "Ελευθερία" to "Eleftheria"', () => {
     expect(toLatin('Ελευθερία')).toBe('Eleftheria');
   });
+
+  it('Should convert the phrase "Κατά φωνή κι ο γάιδαρος" to "Kata foni ki o gaidaros"', () => {
+    expect(toLatin('Κατά φωνή κι ο γάιδαρος')).toBe('Kata foni ki o gaidaros');
+  });
 });
