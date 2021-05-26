@@ -38,4 +38,8 @@ describe('Checks if the conversion is done properly', () => {
   it('Should convert the phrase "Κατά φωνή κι ο γάιδαρος" to "Kata foni ki o gaidaros"', () => {
     expect(toLatin('Κατά φωνή κι ο γάιδαρος')).toBe('Kata foni ki o gaidaros');
   });
+
+  it('Should return when no text is provided', () => {
+    expect(toLatin()).toBe('');
+  });
 });

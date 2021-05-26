@@ -11,6 +11,8 @@ export default function toLatin(greekText = '') {
   for (let i = 0; i < mapGreekToLatin.length; i++) {
     const mapItem = mapGreekToLatin[i];
 
+    // When the mapItem.next array exists, the next charater should be checked
+    // in order to make the conversion correctly.
     if (mapItem.next) {
       for (const followingLetter of mapItem.next) {
         const reg = new RegExp(`${mapItem.from}${followingLetter}`);
