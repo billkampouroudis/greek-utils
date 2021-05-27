@@ -14,7 +14,7 @@ npm install https://github.com/billkampouroudis/greek-utils#[tag]
 
 ```javascript
 import greekUtils from '@billkampouroudis/greek-utils';
-console.log(greekUtils.sanitize('Ταϊζω') //-> Ταιζω
+console.log(greekUtils.sanitize('Ταΐζω') //-> Ταιζω
 ```
 
 #### toLatin(greekText)

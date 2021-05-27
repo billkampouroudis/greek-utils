@@ -1,6 +1,6 @@
 {
-  "name": "@billkampouroudis/greek-utils",
-  "version": "0.0.1",
+  "name": "@bill-kampouroudis/greek-utils",
+  "version": "0.1.1",
   "description": "A library that contains useful utilities for the Greek language.",
   "main": "index.js",
   "scripts": {
