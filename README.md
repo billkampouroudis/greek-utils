@@ -5,7 +5,7 @@ A javascript library that contains useful utilities for the Greek language.
 ### Installation
 
 ```
-npm install https://github.com/billkampouroudis/greek-utils#[tag]
+npm i @bill.kampouroudis/greek-utils
 ```
 
 ### Usage
@@ -13,14 +13,14 @@ npm install https://github.com/billkampouroudis/greek-utils#[tag]
 #### sanitize(greekText)
 
 ```javascript
-import greekUtils from '@billkampouroudis/greek-utils';
+import greekUtils from '@bill.kampouroudis/greek-utils';
 console.log(greekUtils.sanitize('Ταΐζω') //-> Ταιζω
 ```
 
 #### toLatin(greekText)
 
 ```javascript
-import greekUtils from '@billkampouroudis/greek-utils';
+import greekUtils from '@bill.kampouroudis/greek-utils';
 console.log(greekUtils.toLatin('Κατά φωνή κι ο γάιδαρος') //-> Kata foni ki o gaidaros
 ```
 
